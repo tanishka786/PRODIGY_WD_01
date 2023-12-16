@@ -39,25 +39,15 @@
 } 
 
 #n4
-{  background-color:azure;
-    margin-left:11VW;
+{  padding-left:11vw;
     color:#D67D3E;
-    font-size:15px;
+    font-size:20px;
 }
 
 #n5
-{  
-
-    color:#D67D3E;
-    margin-left:1vw;
-    background-color:azure;
-    font-size:15px;
-}
-
-#n6
 {
     color:#D67D3E;
-    padding-left:5VW ;
+    padding-left:11VW ;
     padding-right:2vw;
     font-size:20px;
 }
@@ -67,17 +57,14 @@
   padding:0;
   margin:0;
   background-image: url("/assest/pic1.png"); 
-  
 }
 
 @media (max-width:768px) 
 {
-
     .Bg
     {
         background-image:url("/assest/pic2.png")
     }
-    
 }
 
 @media (max-width:600px)
@@ -96,7 +83,6 @@
     font-family: Georgia;
     color:#F9E4D4;
     flex-wrap: wrap;
- 
 }
 
 @media (max-width:768px)
@@ -108,4 +94,21 @@
           font-size:10vw;
         
     }
+}
+
+.about
+{
+    align-content: center;
+    text-align: center;
+    font-size: 28px; 
+    font-family: Georgia;
+    color:#9C0F48;
+    flex-wrap: wrap;
+}
+
+.CulinaryVideo
+{
+    align-content:center;
+    width:80%;
+    height:10vh;
 }
