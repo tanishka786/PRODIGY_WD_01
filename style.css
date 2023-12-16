@@ -1,0 +1,111 @@
+.navbar
+{   padding:0;
+    background-color:#470D21;
+    height: 80px;
+    border: 5px solid #F9E4D4;
+    padding-top: 10px;
+    margin: 0;
+    width:100%;
+
+}
+
+
+    /* #470D21 */
+    /* 9C0F48 */
+    /* D67D3E */
+    /*  F9E4D4*/
+
+#n1
+{
+   color:#D67D3E;
+   font-size: 25px;
+   line-height:80px;
+   padding: 0 15px;
+   font-weight:bold;
+}
+
+#n2
+{
+    color:#D67D3E;
+    padding-left:11VW;
+    font-size: 20px;
+}
+
+#n3
+{
+    color:#D67D3E;
+    padding-left:11VW;
+    font-size: 20px;
+} 
+
+#n4
+{  background-color:azure;
+    margin-left:11VW;
+    color:#D67D3E;
+    font-size:15px;
+}
+
+#n5
+{  
+
+    color:#D67D3E;
+    margin-left:1vw;
+    background-color:azure;
+    font-size:15px;
+}
+
+#n6
+{
+    color:#D67D3E;
+    padding-left:5VW ;
+    padding-right:2vw;
+    font-size:20px;
+}
+
+.Bg
+{
+  padding:0;
+  margin:0;
+  background-image: url("/assest/pic1.png"); 
+  
+}
+
+@media (max-width:768px) 
+{
+
+    .Bg
+    {
+        background-image:url("/assest/pic2.png")
+    }
+    
+}
+
+@media (max-width:600px)
+{
+    .Bg
+    {
+       /* background-image:url("/assest/photo-1529543544282-ea669407fca3.png"); */
+       background-image: url("/assest/pic3.png");
+    }
+}
+
+#midpart
+{  
+    align-content: center;
+    font-size:4.5vw; 
+    font-family: Georgia;
+    color:#F9E4D4;
+    flex-wrap: wrap;
+ 
+}
+
+@media (max-width:768px)
+{
+    #midpart
+    {
+          width:5vw;
+          height:5vh;
+          font-size:10vw;
+        
+    }
+}
