@@ -1,221 +1,231 @@
-*
-{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration:none;
-    list-style: none;
-    box-sizing: border-box;
+html,
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  height: 100%;
 }
 
-nav
-{   
-    background: #470D21;
-    height: 80px;
-    border: 5px solid #F9E4D4;
-    width:100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-    /* #470D21 */
-    /* 9C0F48 */
-    /* D67D3E */
-    /*  F9E4D4*/
+nav {
+  background: #470d21;
+  height: 80px;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  width: 100%;
+}
 
-.n1
-{   
-    color:#D67D3E;
-    font-size: 25px;
-    line-height:80px;
-    padding: 0 100px;
-    font-weight:bold;
- }
+main {
+  margin-top: 80px;
+  padding: 2rem;
+}
 
-nav ul
-{
+.hero-image {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image1 {
+  margin-top: 80px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/food-hero1.jpg");
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/food-hero2.jpg");
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/food-hero3.jpg");
+}
+
+.hero-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/food-hero4.jpg");
+}
+
+.hero-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.n1 {
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li
-{
-    display: inline-block;
-    line-height: 80px;
-    margin : 0 5px;
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
-nav ul li a
-{   
-    font-size:18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+nav ul li a {
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
- a.n,a:hover
-{
-    background:#9C0F48;
-    transition: .5s;
-    color: #F9E4D4;
+a:visited {
+  color: unset;
 }
 
-.checkbtn
-{
+a.n,
+a:hover {
+  background: #9c0f48;
+  transition: 0.5s;
+  color: #f9e4d4;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #f9e4d4;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.n1 {
     font-size: 30px;
-    color:#F9E4D4;
-    float:right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor:pointer;
-    display: none;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
 }
 
-#check
-{
-    display:none;
-}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
 
-@media (max-width:952px) 
-{
-    label.n1
-    {
-       font-size:30px;
-       padding-left: 50px;
-    }
-
-    nav ul li a 
-    {
-        font-size:16px;
-    }
-}
-
-@media (max-width:858px)
-{
-    .checkbtn
-    {
-        display: block;
-    }
-
-    ul
-    {
-       position: fixed;
-       width: 100%;
-       height: 100vh;
-       background: #9C0F48;
-       top:80px;
-       left:-100%;
-       text-align:center;
-       transition:all .5s ;   
-    }
-        nav ul li
-       {
-           display: block;
-           margin:50px 0;
-           line-height: 30px;
-       }
-
-       nav ul li a
-       {
-             font-size: 20px;
-
-       }
-       a:hover,a.n
-       {
-          background: none;
-          color:#F9E4D4;
-       }
-       
-       #check:checked ~ ul 
-       {
-        left:0;
-       }
-
-}    
-
-
-
-.bg
-{
-  background-image: url("/assest/pic1.jpg"); 
-  background-size: cover;
-  height: calc(100vh - 80px);
-}
-
-#midpart
-{   
-    align-content: center;
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9c0f48;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    font-size:32px;
-    font-family: Georgia;
-    color:#470D21;
-    flex-wrap: wrap;
-}
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
 
-@media (max-width:768px)
-{
-    #midpart
-    {
-          width:5vw;
-          height:5vh;
-          font-size:10vw;
-        
-    }
-}
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.n {
+    background: none;
+    color: #f9e4d4;
+  }
 
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
 
 /* the styling of page ,about,career,book and contact is start */
-.about
-{
-    align-content: center;
-    text-align: center;
-    font-size: 28px; 
-    font-family: Georgia;
-    color:#470D21;
-    flex-wrap: wrap;
+.about {
+  align-content: center;
+  text-align: center;
+  font-size: 28px;
+  font-family: Georgia;
+  color: #470d21;
+  flex-wrap: wrap;
 }
 
-.career
-{   
-    align-content: center;
-    text-align: center;
-    font-size: 25px; 
-    font-family: Georgia;
-    color:#470D21;
-    flex-wrap: wrap;
+.career {
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia;
+  color: #470d21;
+  flex-wrap: wrap;
 }
 
-
-
-.Culinary
-{  
-   margin: 30px 20px 0px 20px;  
-   background:#9C0F48;
-   display: flex;
-   justify-content: space-between;
-   border: #D67D3E;
+.Culinary {
+  margin: 30px 20px 0px 20px;
+  background: #9c0f48;
+  display: flex;
+  justify-content: space-between;
+  border: #d67d3e;
 }
 
-.Culinarytext
-{  
-    padding-left:10px;
-    font-size:30px;
-    font-family:Georgia;
-    color:#F9E4D4;
-    flex-wrap: wrap;
+.Culinarytext {
+  padding-left: 10px;
+  font-size: 30px;
+  font-family: Georgia;
+  color: #f9e4d4;
+  flex-wrap: wrap;
 }
 
-.Contact
-{
-    margin: 30px 20px 0px 20px;  
-    background-color:#9C0F48;
-    display: flex;
-    justify-content: space-between;
-    padding:40px;
+.Contact {
+  margin: 30px 20px 0px 20px;
+  background-color: #9c0f48;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-.Contactext
-{
-    font-size:20px;
-    font-family:Georgia;
-    color:#F9E4D4;
-    flex-wrap: wrap;
+.Contactext {
+  font-size: 20px;
+  font-family: Georgia;
+  color: #f9e4d4;
+  flex-wrap: wrap;
 }
