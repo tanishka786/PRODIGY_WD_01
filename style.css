@@ -23,6 +23,7 @@ nav {
   z-index: 999999;
   top: 0;
   width: 100%;
+  padding: 0 2rem;
 }
 
 main {
@@ -85,15 +86,13 @@ main {
 }
 
 .n1 {
-  font-size: 25px;
+  font-size: 2rem;
   line-height: 80px;
-  padding: 0 100px;
   font-weight: bold;
 }
 
 nav ul {
   float: right;
-  margin-right: 20px;
 }
 
 nav ul li {
@@ -125,7 +124,6 @@ a:hover {
   color: #f9e4d4;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
@@ -134,20 +132,29 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
-  label.n1 {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px) {
+@media (max-width: 920px) {
   .checkbtn {
     display: block;
+  }
+
+  .culinary {
+    flex-flow: column;
+  }
+
+  .culinary-text {
+    padding: 5rem;
+  }
+
+  .culinary iframe {
+    max-width: 100%;
+  }
+
+  nav {
+    padding: 0 1.5rem;
+  }
+
+  label.n1 {
+    font-size: 1rem;
   }
 
   ul {
@@ -199,7 +206,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.Culinary {
+.culinary {
   margin: 30px 20px 0px 20px;
   background: #9c0f48;
   display: flex;
@@ -207,7 +214,7 @@ a:hover {
   border: #d67d3e;
 }
 
-.Culinarytext {
+.culinary-text {
   padding-left: 10px;
   font-size: 30px;
   font-family: Georgia;
