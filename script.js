@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   } else if (this.scrollY >= 1400 && this.scrollY < 1749) {
     console.log(this.scrollY);
     console.log("above 1400");
-    navBar.style.backgroundColor = "#FCFCFC";
+    navBar.style.backgroundColor = "#B5D99C";
   } else if (this.scrollY >= 1750) {
     console.log(this.scrollY);
     console.log("above 1800");
