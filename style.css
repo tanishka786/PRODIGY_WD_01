@@ -132,6 +132,12 @@ a:hover {
     display: none;
 }
 
+@media (max-width: 1024px) {
+    .checkbtn {
+        display: block;
+    }
+}
+
 @media (max-width: 920px) {
     .checkbtn {
         display: block;
@@ -147,6 +153,7 @@ a:hover {
 
     .culinary iframe {
         max-width: 100%;
+        margin: auto;
     }
 
     .Contact {
